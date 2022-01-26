@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StopWatch</title>
+        <link rel="stylesheet" href="stopwatch.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h1 id = 'heading'>StopWatch</h1>
+            <div id ='timer'>
+                <span id= "hours"></span><span id = 'minutes'></span><span id = 'seconds'>00</span>:<span id = 'hunsecs'>00</span>
+            </div>
+            <div class="btn-container">
+                <button class="btn" id= "start" onclick = "startwatch()" >Start</button>
+                <button class="btn" id = "stop" onclick = "stopwatch()" >Stop</button>
+                <button class="btn" id = "reset" onclick = "resetwatch()" >Reset</button>
+            </div>
+        </div>
+        <script src='stopwatch.js'></script>
+    </body>
+</html>
