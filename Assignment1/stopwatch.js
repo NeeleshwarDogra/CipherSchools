@@ -58,25 +58,37 @@ function starttimer(){
         else if (secondO == 9 && secondT == 5 && hunsecO == 9 && hunsecT == 9){
             if (minuteO < 9){
                 minuteO++
+                secondO = 0
+                secondT = 0
                 hunsecO = 0
                 hunsecT = 0
             }
             else if (minuteT < 5){
                 minuteO = 0
                 minuteT++
+                secondO = 0
+                secondT = 0    
                 hunsecO = 0
                 hunsecT = 0
             }
             else if (minuteT == 5 && secondT == 5 && secondO == 9 && minuteO == 9 && hunsecO == 9 && hunsecT == 9){
                 if (hourO < 9){
                     hourO++
+                    minuteO = 0
+                    minuteT = 0
+                    secondO = 0
+                    secondT = 0    
                     hunsecO = 0
                     hunsecT = 0
                 }
                 else{
                     hourT++
+                    minuteT = 0
+                    minuteO = 0
                     hunsecO = 0
                     hunsecT = 0
+                    secondO = 0
+                    secondT = 0    
                 }
             }
         }
